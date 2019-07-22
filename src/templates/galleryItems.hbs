@@ -1,0 +1,29 @@
+<li class="gallery-item">
+  <div class="photo-card">
+    <img src="{{webformatURL}}" alt="{{tags}}" data-fullscreen="{{largeImageURL}}" />
+
+    <div class="stats">
+      <p class="stats-item">
+        <i class="material-icons">thumb_up</i>
+        {{likes}}
+      </p>
+      <p class="stats-item">
+        <i class="material-icons">visibility</i>
+        {{views}}
+      </p>
+      <p class="stats-item">
+        <i class="material-icons">comment</i>
+        {{comments}}
+      </p>
+      <p class="stats-item">
+        <i class="material-icons">cloud_download</i>
+        {{downloads}}
+      </p>
+    </div>
+
+    <!-- Кнопка для открытия модалки с большим изображением, появляется при наведении -->
+    <button type="button" class="fullscreen-button js-fullscreen-btn">
+      <i class="material-icons">zoom_out_map</i>
+    </button>
+  </div>
+</li>
