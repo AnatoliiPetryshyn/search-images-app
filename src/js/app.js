@@ -48,3 +48,5 @@ function onInput(e) {
 
   infScrollInstance.loadNextPage();
 }
+
+refs.form.addEventListener('submit', e => e.preventDefault());
