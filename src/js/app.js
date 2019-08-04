@@ -30,6 +30,8 @@ infScrollInstance.on('load', response => {
   infScrollInstance.appendItems(parsedItems);
 });
 
+refs.form.addEventListener('submit', e => e.preventDefault());
+
 refs.form.input.addEventListener('input', debounce(onInput, 300));
 
 function onInput(e) {
@@ -48,5 +50,3 @@ function onInput(e) {
 
   infScrollInstance.loadNextPage();
 }
-
-refs.form.addEventListener('submit', e => e.preventDefault());
